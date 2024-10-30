@@ -30,6 +30,8 @@ def extraimat(matriz, linha_de_corte, coluna_de_corte, qtd_linhas, qtd_colunas):
         matriz_recort.append(linha)
     return matriz_recort
 
+def inseriMat(matriz,lin,col,val):
+    pass
 def geraMatriz(linha, coluna, min, max):
     li_matriz = []
     for i in range(linha):
@@ -44,20 +46,13 @@ def exibir_matriz(matriz):
         print()
         for j in linha:
             print('%5d' % j,end='')
-
-
-
-
-
-
 def main():
     resultado = geraMatriz(10, 10, 0, 20)
     corte = extraimat(resultado, 1, 3, 2, 4)
     exibir_matriz(corte)
     print()
+    print('-'*50)
     exibir_matriz(resultado)
-    
-
 
 if __name__ == "__main__":
     main()
